@@ -1,6 +1,7 @@
 'use strict'
 
 // parou no time 21  minutos 
+//Mini projetos javascript (Iniciantes) - 08 CRUD Completo youtube  fernandp Leonid
 
 const openModal = () => document.getElementById('modal')
 .classList.add('active')
