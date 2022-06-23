@@ -1,5 +1,7 @@
 'use strict'
 
+// parou no time 21  minutos 
+
 const openModal = () => document.getElementById('modal')
 .classList.add('active')
 
@@ -18,8 +20,13 @@ const tempClient = {
 // Crud - create update delete
 
 const createClient = (client) => {
-
-    localStorage.setItem("db_client",JSON.stringify(client))
+                    // ele esta lendo todo conteudo do localstorage transformando em json e envia para variável db_client 
+    const db_client = JSON.parse(localStorage.getItem('db_client'))
+    //acrescenta mais um push
+    db_client.push (client)
+    //convertento em string 
+                           // key      value
+    localStorage.setItem("db_client",JSON.stringify(db_client))
 }
 
 
