@@ -136,6 +136,11 @@ updateTable()
 document.getElementById('cadastrarCliente')
     .addEventListener('click', openModal)
 
+
+
+
+    
+
 document.getElementById('modalClose')
     .addEventListener('click', closeModal)
 
