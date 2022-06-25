@@ -7,6 +7,18 @@
     <script type='text/javascript' src="static/main2.js"></script>
 
     <style>
+        
+        }
+        .container{
+
+            background-color: #a00;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
         #listaRegistros{ display: none; }
         #cadastroRegistro{
             display: none;
@@ -65,12 +77,20 @@
         .label>div>input{
             flex: 1;
         }
+        @media only screen and (max-width: 600px) {
+            .text{
+                font-size: 10px;
+                color:blue;
+            }
+        }
     </style>
 
 </head>
 <body page='lista'>
     
-    <h1 style="text-align: center;background-color: #a00;color: white;border-radius: 10px;font-size: 20px;" >Versão beta de cadastro de uniforme Leandro Luiz Pereira </h1>
+    <div class="container">
+        <h1 class="text" id="text" style="text-align: center;background-color: #a00;color: white;border-radius: 10px;font-size: 20px;" >Versão beta de cadastro de uniforme Leandro Luiz Pereira </h1>
+    </div>
     <div id='listaRegistros'>
 
         <div style='display: flex;'>
