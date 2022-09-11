@@ -8,7 +8,11 @@
 
     <style>
         
-        
+        .scroll{
+            overflow: scroll; 
+            width: 100px;
+            height: 500px;
+        }
         .container{
 
             background-color: #a00;
@@ -107,16 +111,18 @@
                     <th>Lado</tr>
                     <th></th>
                 </tr>
+                <div>
+                    <button onclick="vizualizar('cadastro', true)">Novo cadastro</button>
+                </div>
             </thead>
             <tbody id='listaRegistrosBody'></tbody>
         </table>
 
-        <div>
-            <button onclick="vizualizar('cadastro', true)">Novo usuário</button>
-        </div>
+       
 
-    </div>
-
+    </div class="scroll">
+     
+    <div>
     <form id='cadastroRegistro'>
 
         <div class='label'>
@@ -153,6 +159,6 @@
         </div>
 
     </form>
-
+</div>
 </body>
 </html>
